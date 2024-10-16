@@ -1,0 +1,140 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  display: flex;
+}
+
+.container .text {
+  margin: 18% 0 18% 10%;
+  color: white;
+  width: 550px;
+}
+
+.container .text .tTitle {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  width: 450px;
+}
+
+.container .text .tText {
+  font-weight: 400;
+}
+
+.container .formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.container .formContainer .fText {
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  font-weight: 400;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsl(249, 10%, 26%);
+  width: 500px;
+  margin: 0 0 20px 0;
+}
+
+.container .formContainer .form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsl(249, 10%, 26%);
+  width: 525px;
+  height: 450px;
+}
+
+.container .formContainer .form .formTextArea {
+  width: 85%;
+  height: 40px;
+  margin: 30px 0 0 30px;
+  border-radius: 5px;
+  border: 1.5px solid hsl(246, 25%, 77%);
+  font-family: "Poppins", sans-serif;
+  color: hsl(249, 10%, 26%);
+  font-weight: 700;
+  padding: 5px 0 5px 25px;
+  position: relative;
+}
+
+.container .formContainer .form .formTextArea:focus {
+  border: 2px solid hsl(248, 32%, 49%);
+  outline: none;
+}
+
+.container .formContainer .form .icon {
+  position: absolute; 
+  margin: -40px 0 0 450px;
+  display: none;
+}
+
+.container .formContainer .form .icon.active {
+  display: block;
+}
+
+.container .formContainer .form .button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 15px;
+  margin: 25px 0 0 30px;
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px hsl(249, 10%, 26%);
+  cursor: pointer;
+}
+
+.container .formContainer .form .fFooterText {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  margin: 15px 0 0 0;
+}
+
+.error-message {
+  display: none;
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  padding: 0 0 10px 0;
+  margin: 0 20px -30px 0;
+  text-align: right;
+}
+
+.error-message.active {
+  display: block;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 675px) {
+  .container {
+    display: inline;
+  }
+}
+
+/*Falta fazer suporte pra mobile*/
